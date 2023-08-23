@@ -5,7 +5,6 @@ class Solution:
             return
         for i in range(index,len(lst)):
             temp.append(lst[i])
-            print(temp)
             self.comb(lst,k,ans,temp,i+1)
             temp.pop()
     def combine(self, n: int, k: int) -> List[List[int]]:
